@@ -25,7 +25,6 @@ fun networkCall(tokenList: ArrayList<String>) {
 
         println(responseJson)
 
-
         when (result) {
             is Result.Failure -> {
                 println("Trying to interrupt and cancel request")
@@ -34,7 +33,6 @@ fun networkCall(tokenList: ArrayList<String>) {
             }
             is Result.Success -> {
                 println("Success")
-
 
                 val responseBodyObjectList = parseJsonToResponseBodyObject(responseJson)
 

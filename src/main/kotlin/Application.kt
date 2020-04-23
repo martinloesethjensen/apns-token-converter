@@ -1,7 +1,7 @@
 import io.readJsonStreamToList
-import network.networkCall
 import java.io.File
 import java.util.*
+import network.networkCall
 
 fun main() {
     println("Starting application")
@@ -27,7 +27,3 @@ fun readFromFile(result: ArrayList<String>): ArrayList<String> {
 
     return result
 }
-
-
-
-

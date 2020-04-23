@@ -2,9 +2,9 @@ package io
 
 import com.beust.klaxon.JsonReader
 import com.beust.klaxon.Klaxon
+import java.io.FileReader
 import model.IdToken
 import model.ResponseBodyObjectList
-import java.io.FileReader
 
 fun parseJsonToResponseBodyObject(json: String) = Klaxon().parse<ResponseBodyObjectList>(json)
 
